@@ -1,0 +1,97 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+	background-color: #bec9b8;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+.calculator{
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.calculator-screen{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #93a689;
+    color:#fff;
+    font-size: 48px;
+    text-align: right;
+    padding: 0px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #93a689;   
+}
+
+.calculator-keys{
+    width: 100%;
+}
+
+.row{
+	display: flex;
+	margin-bottom: 3px;   
+    justify-content: space-between;
+}
+
+.row button{
+    font-size: 32px;
+    width: 24%;
+    height: 80px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    background-color: #93a689;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+    transition: ease-in-out 0.5s;
+}
+
+.row button:hover{
+    background-color: #274f13;
+}
+
+.row .all-clear,.row .zero-btn{
+    width: 50%;
+}
+
+.row .all-clear{
+    background-color: #274f13;
+}
+
+.row .operator, .row .equal-sign{
+    background-color:#274f13;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+}
+
+.row .operator:hover{
+    background-color: #93a689;;
+}
+
+.row .equal-sign:hover{
+    background-color:#93a689;
+}
+
+.row .all-clear:hover{
+    background-color:red;
+}
